@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FairCeption</string>
+    <string name="password">Password</string>
+    <string name="already_have_a_an_account_sign_in">Already have a an account? Sign in</string>
+    <string name="email_address">Email address</string>
+    <string name="by_creating_your_account_you_accept_the_cgu_and_the_conditions_of_use">By creating your account you accept the CGU and the conditions of use.</string>
+    <string name="next">Next</string>
+    <string name="remember_me_next_time">Remember me Next time</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? Sign up.</string>
+    <string name="email_address_or_phone_or_pseudo">Email Address or Phone or Pseudo</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+</resources>
