@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAspirationActivity"
+    android:background="#D1D5E4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="My aspiration"
+                    android:textAlignment="center"
+                    android:textColor="#0C0640"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Let us know what your aspirations are for your
+next mission, it will help us later to offer only spot
+on opportunities"
+                    android:textColor="#00003A"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_qustionmark" />
+
+                    <TextView
+                        android:layout_width="187dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:text="Why fairception?"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+
+                    <ToggleButton
+                        android:id="@+id/toggleBdrutton1"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text=""
+                        android:textColor="@drawable/textcolortoggle"
+                        android:textOff="Just curious"
+                        android:textOn="Just curious" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Get trusted"
+                        android:textOn="Get trusted" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Know myself"
+                        android:textOn="Know myself" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Change Job"
+                        android:textOn="Change Job" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton5"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Change Career"
+                        android:textOn="Change Career" />
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_heart" />
+
+                    <TextView
+                        android:layout_width="187dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="What am I after...?"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <TextView
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="(You can pick up to 3)"
+                    android:textColor="#00003A"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBdrutton6"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text=""
+                        android:textOff="Quick growth"
+                        android:textOn="Quick growth" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton7"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Job Stability"
+                        android:textOn="Job Stability" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton8"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Max Salary"
+                        android:textOn="Max Salary" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton9"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Good vibes @ work"
+                        android:textOn="Good vibes @ work" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton10"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Constant learning"
+                        android:textOn="Constant learning" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton11"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Flexibility (Location, Working hours)"
+                        android:textOn="Flexibility (Location, Working hours)" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton12"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Personal Challenge"
+                        android:textOn="Personal Challenge" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton13"
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Get Daily Results"
+                        android:textOn="Get Daily Results" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton14"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Human interactions"
+                        android:textOn="Human interactions" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton15"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="No daily routine"
+                        android:textOn="No daily routine" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton16"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Direct Impact on Society"
+                        android:textOn="Direct Impact on Society" />
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_week" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="My perfect work week is..."
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="Tap to increase number of days"
+                    android:textColor="#00003A"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btOffice"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/roundselector2"
+                            android:text="0"
+
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Office"
+                            android:textAlignment="center"
+                            android:textColor="@color/primarybule"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/bthome"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/roundselector2"
+                            android:text="1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Home"
+                            android:textAlignment="center"
+                            android:textColor="@color/primarybule"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btWorkIn"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/roundselector2"
+                            android:text="1"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Worksite\n(Indoor)"
+                            android:textAlignment="center"
+                            android:textColor="@color/primarybule"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btWorkOut"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/roundselector2"
+                            android:text="1"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Worksite  \n(Outdoor)"
+                            android:textAlignment="center"
+                            android:textColor="@color/primarybule"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btTravel"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/roundselector2"
+                            android:text="1"
+                            android:textOff="0"
+                            android:textOn="0"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Travel"
+                            android:textAlignment="center"
+                            android:textColor="@color/primarybule"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_mission" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="My type of mission?"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBdrutton22"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text=""
+                        android:textOff="Full time"
+                        android:textOn="Full time" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton23"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Part time"
+                        android:textOn="Part time" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton24"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+
+                        android:textOff="Freelance"
+                        android:textOn="Freelance" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton25"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Entrepreneur"
+                        android:textOn="Entrepreneur" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton26"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Internship"
+                        android:textOn="Internship" />
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Where I d rather work?"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <EditText
+                    android:id="@+id/editMobileNo"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/searchbarshape"
+                    android:drawableRight="@drawable/search"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Location (cities, regions, countries)"
+                    android:textColorHint="@color/primarybule"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBdrutton27"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:textOff="London"
+                        android:textOn="London" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton28"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Bali"
+                        android:textOn="Bali" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton29"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Sweden"
+                        android:textOn="Sweden" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton30"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Switzerland"
+                        android:textOn="Switzerland" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton31"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Auverge-Rhône-Alpes"
+                        android:textOn="Auverge-Rhône-Alpes" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton32"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Montpellier"
+                        android:textOn="Montpellier" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton33"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Laos"
+                        android:textOn="Laos" />
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="My dream sectors"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Button
+                    android:id="@+id/btnpopup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/popupbtn"
+                    android:text="Choose sector"
+                    android:textAlignment="center"
+                    android:textColor="@color/primarybule"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBdrutton34"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:textOff="Sector 1"
+                        android:textOn="Sector 1" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton35"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Sector 4"
+                        android:textOn="Sector 4" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton36"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Sector 6"
+                        android:textOn="Sector 6" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="My dream job type"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Button
+                    android:id="@+id/btnpopup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/popupbtn"
+                    android:text="Choose Job Type"
+                    android:textAlignment="center"
+                    android:textColor="@color/primarybule"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBdrutton37"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:textOff="Option 1"
+                        android:textOn="Option 1" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBsutton38"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Option 2"
+                        android:textOn="Option 2" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton39"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Option 3"
+                        android:textOn="Option 3" />
+
+                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                        android:id="@+id/toggleBssutton40"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/roundselector"
+                        android:text="sdsd"
+                        android:textOff="Option 4"
+                        android:textOn="Option 4 " />
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_money_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Minimum Salary in same job"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <EditText
+                        android:layout_width="111dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/roundselector"
+                        android:gravity="left|center"
+                        android:hint="min"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:layout_width="111dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/roundselector"
+                        android:gravity="left|center"
+                        android:hint="max"
+                        android:padding="5dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spnType002"
+                        android:layout_width="110dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_boarder"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="5dp"
+                        android:spinnerMode="dropdown" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_money_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Maximum Salary in same job"
+                        android:textColor="#00003A"
+                        android:textSize="20dp" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <EditText
+                        android:layout_width="111dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/roundselector"
+                        android:gravity="left|center"
+                        android:hint="0"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:layout_width="111dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/roundselector"
+                        android:gravity="left|center"
+                        android:hint="max"
+                        android:padding="5dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spnType102"
+                        android:layout_width="110dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_boarder"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:spinnerMode="dropdown" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <Button
+                    android:id="@+id/btn_aspiration"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+
+                    android:background="@drawable/blue_button"
+                    android:text="Confirm" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
