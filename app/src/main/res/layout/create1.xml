@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateActivity2"
+    android:background="#D1D5E4"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbarcreate1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#0C0640"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:paddingTop="20dp"
+            android:text="Already have an account? Sign in"
+            android:textAlignment="center"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_Lastname_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+
+            android:text="Email address"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editText_Lastname_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Password"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <CheckBox
+            android:textColor="#0C0640"
+            android:id="@+id/checkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Remember me Next time"
+            android:button="@drawable/custom_checkbox"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20dp"
+            android:text="By creating your account you accept the CGU and the conditions of use."
+            android:textColor="#0C0640"
+            android:textSize="19dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+
+        <Button
+            android:id="@+id/button_Letsgo_CreateActivity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+android:textSize="18sp"
+            android:background="@drawable/blue_button"
+            android:text="Next" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

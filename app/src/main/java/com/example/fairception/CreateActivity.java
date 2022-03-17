@@ -1,10 +1,13 @@
 package com.example.fairception;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,10 +16,19 @@ public class CreateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create);
+        setContentView(R.layout.create1);
+
+        Toolbar toolbar = findViewById(R.id.my_toolbarcreate1);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Create Account");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
 
 
-        Button button_next_createactivity1 = findViewById(R.id.button_next_create_activity);
+
+
+        Button button_next_createactivity1 = (Button)findViewById(R.id.button_Letsgo_CreateActivity);
 //        if(button_next_createactivity1.getText().length()>1){
 //            button_next_createactivity1.setBackgroundColor();
 //        }else   (hover effect code)
@@ -32,5 +44,19 @@ public class CreateActivity extends AppCompatActivity {
            }
         }
         );
+
+
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
+
+

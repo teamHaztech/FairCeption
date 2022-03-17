@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FairCeption</string>
     <string name="password">Password</string>
-    <string name="already_have_a_an_account_sign_in">Already have a an account? Sign in</string>
+    <string name="already_have_a_an_account_sign_in">Already have a an account? </string>
     <string name="email_address">Email address</string>
     <string name="by_creating_your_account_you_accept_the_cgu_and_the_conditions_of_use">By creating your account you accept the CGU and the conditions of use.</string>
     <string name="next">Next</string>
@@ -10,4 +10,14 @@
     <string name="don_t_have_an_account_sign_up">Don’t have an account? Sign up.</string>
     <string name="email_address_or_phone_or_pseudo">Email Address or Phone or Pseudo</string>
     <string name="forgot_your_password">Forgot your password?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_transferable_skill">TransferableSkillActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

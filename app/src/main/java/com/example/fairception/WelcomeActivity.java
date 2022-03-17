@@ -15,6 +15,7 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
       Button  button_CreateAnaccount1=findViewById(R.id.button_CreateAnAccount_welcomeActivity);
       Button button_Signin_WelcomeActivity2=findViewById(R.id.button_Signin_WelcomeActivity);
 

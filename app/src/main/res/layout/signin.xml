@@ -5,20 +5,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1D5E4"
     tools:context=".SigninActivity"
     >
 
 
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+    </LinearLayout>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="531dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="26dp">
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
 
         <TextView
             android:id="@+id/textView"
@@ -26,14 +50,18 @@
             android:layout_height="42dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
             android:text="@string/don_t_have_an_account_sign_up"
             android:textAlignment="center"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintHorizontal_bias="0.311"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.048" />
+            app:layout_constraintVertical_bias="0.047" />
 
         <TextView
             android:id="@+id/textView_emialadrees_SigninActivity"
@@ -42,16 +70,17 @@
             android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:text="@string/email_address_or_phone_or_pseudo"
-            android:textSize="20sp"
+            android:textColor="#0C0640"
+            android:textSize="19sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintHorizontal_bias="0.263"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.02" />
+            app:layout_constraintVertical_bias="0.01" />
 
         <EditText
             android:id="@+id/editText_emailaddress_SigninActivity"
@@ -60,16 +89,17 @@
             android:layout_below="@+id/textView_emialadrees_SigninActivity"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_border"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintHorizontal_bias="0.292"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_emialadrees_SigninActivity"
-            app:layout_constraintVertical_bias="0.103"
+            app:layout_constraintVertical_bias="0.024"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
@@ -80,12 +110,15 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:text="@string/password"
+            android:textColor="#0C0640"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.095"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_emailaddress_SigninActivity"
-            app:layout_constraintVertical_bias="0.069" />
+            app:layout_constraintVertical_bias="0.047" />
 
         <EditText
             android:id="@+id/editTextTextPassword3"
@@ -94,52 +127,59 @@
             android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_border"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintHorizontal_bias="0.298"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="0.139"
+            app:layout_constraintVertical_bias="0.025"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="177dp"
-            android:layout_height="28dp"
+            android:layout_width="307dp"
+            android:layout_height="33dp"
             android:layout_below="@+id/editTextTextPassword3"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
             android:text="@string/forgot_your_password"
+            android:textColor="#0C0640"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintHorizontal_bias="0.278"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
-            app:layout_constraintVertical_bias="0.12" />
+            app:layout_constraintVertical_bias="0.025" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/button_next_signin"
-        android:layout_width="475dp"
-        android:layout_height="91dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="138dp"
-        android:text="@string/next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnknownId" />
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="20dp" >
 
+
+        <Button
+            android:id="@+id/button_Letsgo_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+
+            android:background="@drawable/blue_button"
+            android:text="Next" />
+
+
+    </LinearLayout>
 
 </RelativeLayout>

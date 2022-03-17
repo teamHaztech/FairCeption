@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateActivity2"
+    android:background="#D1D5E4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbarcreate2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#0C0640"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:paddingTop="20dp"
+            android:text="Already have an account? Sign in"
+            android:textAlignment="center"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_Lastname_CreateActivity2"
+            android:layout_width="124dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="302dp"
+            android:text="Lastname"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editText_Lastname_CreateActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvFname"
+            android:layout_width="124dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="302dp"
+            android:text="Firstname"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvNationality"
+            android:layout_width="124dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="302dp"
+            android:text="Nationality"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnType"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="22dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_boarder"
+            android:paddingRight="16dp" />
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="124dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="302dp"
+            android:text="Username"
+            android:textColor="#0C0640"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/textView_Lastname_CreateActivity2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:text="(to quickly share your profile)"
+            android:textColor="#0C0640"
+            android:textFontWeight="20"
+            android:textSize="19dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20dp"
+            android:text="You’ll receive a link by e-mail to validate
+your account"
+            android:textColor="#0C0640"
+            android:textSize="19dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+
+        <Button
+            android:id="@+id/btCreatetwo"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+
+            android:background="@drawable/blue_button"
+            android:text="LET'S GO!" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
