@@ -17,13 +17,14 @@ public class CreateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create1);
+        getSupportActionBar().hide();
 
-        Toolbar toolbar = findViewById(R.id.my_toolbarcreate1);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Create Account");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
+//        Toolbar toolbar = findViewById(R.id.my_toolbarcreate1);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Create Account");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
 
 
 

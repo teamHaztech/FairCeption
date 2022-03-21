@@ -8,7 +8,25 @@
     android:background="#D1D5E4"
     tools:context=".SigninActivity"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+
+            <include layout="@layout/toolbar"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 
@@ -18,14 +36,6 @@
         android:orientation="vertical"
         android:layout_marginBottom="20dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/my_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@null"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
 
 
@@ -40,7 +50,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp">
 
@@ -65,7 +75,7 @@
 
         <TextView
             android:id="@+id/textView_emialadrees_SigninActivity"
-            android:layout_width="320dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
@@ -77,67 +87,72 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.263"
+            app:layout_constraintHorizontal_bias="0.216"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintVertical_bias="0.01" />
 
         <EditText
             android:id="@+id/editText_emailaddress_SigninActivity"
-            android:layout_width="312dp"
-            android:layout_height="wrap_content"
+            android:layout_width="377dp"
+            android:layout_height="58dp"
             android:layout_below="@+id/textView_emialadrees_SigninActivity"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textColor="#ffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.292"
+            app:layout_constraintHorizontal_bias="0.529"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_emialadrees_SigninActivity"
-            app:layout_constraintVertical_bias="0.024"
+            app:layout_constraintVertical_bias="0.018"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="107dp"
+            android:layout_width="wrap_content"
             android:layout_height="29dp"
             android:layout_below="@+id/editText_emailaddress_SigninActivity"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:text="@string/password"
             android:textColor="#0C0640"
-            android:textSize="16dp"
+            android:textSize="19dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintHorizontal_bias="0.085"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_emailaddress_SigninActivity"
-            app:layout_constraintVertical_bias="0.047" />
+            app:layout_constraintVertical_bias="0.068" />
 
         <EditText
             android:id="@+id/editTextTextPassword3"
-            android:layout_width="314dp"
-            android:layout_height="wrap_content"
+            android:layout_width="368dp"
+            android:layout_height="53dp"
             android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/rounded_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_border"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="0.025"
+            app:layout_constraintVertical_bias="0.018"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
@@ -151,7 +166,7 @@
             android:layout_marginTop="25dp"
             android:text="@string/forgot_your_password"
             android:textColor="#0C0640"
-            android:textSize="16dp"
+            android:textSize="19dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -162,6 +177,7 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

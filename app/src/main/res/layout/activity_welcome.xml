@@ -8,63 +8,89 @@
     tools:context=".WelcomeActivity"
     android:background="#0C0640"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="25dp"
+            android:src="@drawable/image_wel_design" />
+    </LinearLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Signinbtn"
         android:layout_width="match_parent"
-        android:layout_height="381dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="1dp"
-        android:padding="22dp">
+        android:layout_marginBottom="3dp"
+        android:padding="29dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+    <Button
+        android:id="@+id/button_CreateAnAccount_welcomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_button"
+        android:text="Create An account"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button android:textColor="@color/lightblue"
+        android:id="@+id/button_Signin_WelcomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lightnlue_borderbutton"
+        android:onClick="createaccount"
+        android:text="Sign in"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_CreateAnAccount_welcomeActivity"
+        app:layout_constraintVertical_bias="0.206"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="297dp"
-            android:layout_height="71dp"
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.377"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122"
-            android:src="@drawable/logo" />
-
-        <Button
-            android:id="@+id/button_CreateAnAccount_welcomeActivity"
-            android:layout_width="362dp"
-            android:layout_height="67dp"
-            android:layout_marginTop="50dp"
-
-            android:background="@drawable/shapebutton"
-            android:text="Create An account"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.088" />
-
-        <Button
-            android:id="@+id/button_Signin_WelcomeActivity"
-            android:layout_width="360dp"
-            android:layout_height="63dp"
-            android:background="@drawable/shapebutton"
-            android:onClick="createaccount"
-            android:text="Sign in"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_CreateAnAccount_welcomeActivity"
-            app:layout_constraintVertical_bias="0.206"
-            tools:ignore="OnClick" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

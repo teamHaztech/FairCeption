@@ -16,7 +16,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.fairception.databinding.TransferableSkillBinding;
 
 public class TransferableSkillActivity extends AppCompatActivity {
 
@@ -27,20 +26,14 @@ public class TransferableSkillActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.transferable_skill);
-        Toolbar toolbar = findViewById(R.id.my_toolbarTransfer);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Transferable Skills");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
-
+        getSupportActionBar().hide();
 
 
         Button btConfirm = (findViewById(R.id.btnNextHardskill2));
 
         btConfirm.setOnClickListener(view -> {
-            Intent i = new Intent(TransferableSkillActivity.this,MyAspirationActivity.class);
-            startActivity(i);
+            Intent Exp = new Intent(TransferableSkillActivity.this,Expertises.class);
+            startActivity(Exp);
             finish();
 
         });

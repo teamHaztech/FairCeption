@@ -14,24 +14,25 @@
         android:orientation="vertical"
         android:layout_marginBottom="20dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/my_toolbarcreate2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@null"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
 
 
+            <include layout="@layout/toolbar"/>
+
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -85,7 +86,9 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/tvFname"
@@ -115,7 +118,9 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/tvNationality"
@@ -170,7 +175,8 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp" />
 
         <TextView
             android:layout_width="match_parent"

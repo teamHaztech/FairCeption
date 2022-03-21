@@ -12,13 +12,14 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
        /* getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.splashscreen);
+        getSupportActionBar().hide();
 
         Thread thread = new Thread(){
             @Override
             public void run() {
                 super.run();
                 try {
-                    sleep(400);
+                    sleep(1500);
                 }
                 catch(Exception e){
                     e.printStackTrace();

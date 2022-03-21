@@ -14,6 +14,7 @@ int countHome = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aspiration);

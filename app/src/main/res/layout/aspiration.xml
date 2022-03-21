@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,27 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".MyAspirationActivity"
     android:background="#D1D5E4">
-    <LinearLayout
+
+    <LinearLayout android:id="@+id/llSV"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="20dp">
-
-
+        android:orientation="vertical">
+        <include
+            android:id="@+id/tlAspiration" layout="@layout/toolbar_skip" />
 
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+
+
+
+    <ScrollView android:layout_below="@+id/llSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:orientation="vertical">
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,10 +40,9 @@
 
 
                 <TextView
-                    android:layout_width="331dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins"
                     android:text="My aspiration"
                     android:textAlignment="center"
                     android:textColor="#0C0640"
@@ -52,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins"
                     android:layout_marginTop="25dp"
                     android:layout_marginRight="10dp"
                     android:text="Let us know what your aspirations are for your
@@ -87,6 +89,7 @@ on opportunities"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="0dp"
                         android:text="Why fairception?"
+                        android:fontFamily="@font/poppins"
                         android:textColor="#00003A"
                         android:textSize="20dp" />
                 </com.google.android.flexbox.FlexboxLayout>
@@ -123,7 +126,7 @@ on opportunities"
                         android:textOff="Just curious"
                         android:textOn="Just curious" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton2"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -133,10 +136,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Get trusted"
                         android:textOn="Get trusted" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton3"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -146,10 +150,11 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Know myself"
                         android:textOn="Know myself" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton4"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -159,10 +164,11 @@ on opportunities"
                         android:layout_marginRight="20dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Change Job"
                         android:textOn="Change Job" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton5"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -171,6 +177,7 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Change Career"
                         android:textOn="Change Career" />
 
@@ -206,18 +213,19 @@ on opportunities"
                         android:lineSpacingMultiplier="1.2"
                         android:text="What am I after...?"
                         android:textColor="#00003A"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"/>
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <TextView
                     android:layout_width="187dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-
+                    android:fontFamily="@font/poppins"
                     android:lineSpacingMultiplier="1.2"
                     android:text="(You can pick up to 3)"
                     android:textColor="#00003A"
-                    android:textSize="19dp" />
+                    android:textSize="15sp" />
 
 
             </LinearLayout>
@@ -240,7 +248,7 @@ on opportunities"
                     app:flexWrap="wrap">
 
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBdrutton6"
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
@@ -248,10 +256,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text=""
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Quick growth"
                         android:textOn="Quick growth" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton7"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -261,10 +270,11 @@ on opportunities"
                         android:layout_marginRight="5dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Job Stability"
                         android:textOn="Job Stability" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton8"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -274,10 +284,11 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Max Salary"
                         android:textOn="Max Salary" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton9"
                         android:layout_width="165dp"
                         android:layout_height="wrap_content"
@@ -287,10 +298,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Good vibes @ work"
                         android:textOn="Good vibes @ work" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton10"
                         android:layout_width="165dp"
                         android:layout_height="wrap_content"
@@ -299,10 +311,11 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Constant learning"
                         android:textOn="Constant learning" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton11"
                         android:layout_width="310dp"
                         android:layout_height="wrap_content"
@@ -311,10 +324,11 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Flexibility (Location, Working hours)"
                         android:textOn="Flexibility (Location, Working hours)" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton12"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"
@@ -324,10 +338,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Personal Challenge"
                         android:textOn="Personal Challenge" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton13"
                         android:layout_width="155dp"
                         android:layout_height="wrap_content"
@@ -336,10 +351,11 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Get Daily Results"
                         android:textOn="Get Daily Results" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton14"
                         android:layout_width="175dp"
                         android:layout_height="wrap_content"
@@ -349,10 +365,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Human interactions"
                         android:textOn="Human interactions" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton15"
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
@@ -361,10 +378,11 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="No daily routine"
                         android:textOn="No daily routine" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton16"
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
@@ -373,6 +391,7 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Direct Impact on Society"
                         android:textOn="Direct Impact on Society" />
 
@@ -408,7 +427,8 @@ on opportunities"
                         android:lineSpacingMultiplier="1.2"
                         android:text="My perfect work week is..."
                         android:textColor="#00003A"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"/>
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <TextView
@@ -419,7 +439,8 @@ on opportunities"
                     android:lineSpacingMultiplier="1.2"
                     android:text="Tap to increase number of days"
                     android:textColor="#00003A"
-                    android:textSize="19dp" />
+                    android:textSize="19dp"
+                    android:fontFamily="@font/poppins"/>
 
 
             </LinearLayout>
@@ -451,10 +472,10 @@ on opportunities"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="8dp"
                             android:background="@drawable/roundselector2"
+                            android:gravity="center"
                             android:text="0"
-
-                            android:textAlignment="center"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
 
                         <TextView
@@ -482,8 +503,10 @@ on opportunities"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="8dp"
                             android:background="@drawable/roundselector2"
-                            android:text="1"
-                            android:textSize="20sp" />
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -509,8 +532,10 @@ on opportunities"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="8dp"
                             android:background="@drawable/roundselector2"
-                            android:text="1"
-                            android:textSize="20sp" />
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
 
                         <TextView
@@ -538,8 +563,10 @@ on opportunities"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="8dp"
                             android:background="@drawable/roundselector2"
-                            android:text="1"
-                            android:textSize="20sp" />
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
 
                         <TextView
@@ -559,6 +586,7 @@ on opportunities"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+
                         <Button
                             android:id="@+id/btTravel"
                             android:layout_width="90dp"
@@ -566,11 +594,13 @@ on opportunities"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="8dp"
                             android:background="@drawable/roundselector2"
-                            android:text="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAlignment="center"
                             android:textOff="0"
                             android:textOn="0"
-                            android:textSize="20sp" />
-
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -616,7 +646,8 @@ on opportunities"
                         android:lineSpacingMultiplier="1.2"
                         android:text="My type of mission?"
                         android:textColor="#00003A"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"/>
                 </com.google.android.flexbox.FlexboxLayout>
 
 
@@ -638,7 +669,7 @@ on opportunities"
                     app:alignItems="stretch"
                     app:flexWrap="wrap">
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBdrutton22"
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
@@ -646,10 +677,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text=""
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Full time"
                         android:textOn="Full time" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton23"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -659,10 +691,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Part time"
                         android:textOn="Part time" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton24"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -672,11 +705,12 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
 
                         android:textOff="Freelance"
                         android:textOn="Freelance" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton25"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -686,10 +720,11 @@ on opportunities"
                         android:layout_marginRight="20dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Entrepreneur"
                         android:textOn="Entrepreneur" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton26"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -698,6 +733,7 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Internship"
                         android:textOn="Internship" />
 
@@ -733,12 +769,13 @@ on opportunities"
                         android:lineSpacingMultiplier="1.2"
                         android:text="Where I d rather work?"
                         android:textColor="#00003A"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"/>
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <EditText
                     android:id="@+id/editMobileNo"
-                    android:layout_width="370dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="5dp"
                     android:layout_marginLeft="50dp"
@@ -770,17 +807,18 @@ on opportunities"
                     app:alignItems="stretch"
                     app:flexWrap="wrap">
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBdrutton27"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="London"
                         android:textOn="London" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton28"
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
@@ -790,10 +828,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Bali"
                         android:textOn="Bali" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton29"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
@@ -803,10 +842,11 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Sweden"
                         android:textOn="Sweden" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton30"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -817,10 +857,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Switzerland"
                         android:textOn="Switzerland" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton31"
                         android:layout_width="185dp"
                         android:layout_height="wrap_content"
@@ -829,10 +870,11 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Auverge-Rhône-Alpes"
                         android:textOn="Auverge-Rhône-Alpes" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton32"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -842,10 +884,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Montpellier"
                         android:textOn="Montpellier" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton33"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
@@ -854,6 +897,7 @@ on opportunities"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Laos"
                         android:textOn="Laos" />
 
@@ -924,17 +968,18 @@ on opportunities"
                     app:alignItems="stretch"
                     app:flexWrap="wrap">
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBdrutton34"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Sector 1"
                         android:textOn="Sector 1" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton35"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
@@ -944,10 +989,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Sector 4"
                         android:textOn="Sector 4" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton36"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
@@ -957,6 +1003,7 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Sector 6"
                         android:textOn="Sector 6" />
 
@@ -1025,17 +1072,18 @@ on opportunities"
                     app:alignItems="stretch"
                     app:flexWrap="wrap">
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBdrutton37"
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Option 1"
                         android:textOn="Option 1" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBsutton38"
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
@@ -1045,10 +1093,11 @@ on opportunities"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Option 2"
                         android:textOn="Option 2" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton39"
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
@@ -1058,10 +1107,11 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Option 3"
                         android:textOn="Option 3" />
 
-                    <ToggleButton android:textColor="@drawable/textcolortoggle"
+                    <ToggleButton
                         android:id="@+id/toggleBssutton40"
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
@@ -1071,6 +1121,7 @@ on opportunities"
                         android:layout_marginRight="15dp"
                         android:background="@drawable/roundselector"
                         android:text="sdsd"
+                        android:textColor="@drawable/textcolortoggle"
                         android:textOff="Option 4"
                         android:textOn="Option 4 " />
 

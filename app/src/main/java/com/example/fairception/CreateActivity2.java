@@ -16,19 +16,14 @@ public class CreateActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create2);
-        Toolbar toolbar = findViewById(R.id.my_toolbarcreate2);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Create Account");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
+        getSupportActionBar().hide();
 
         Button btCreate2 = findViewById(R.id.btCreatetwo);
 
         btCreate2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CreateActivity2.this,TransferableSkillActivity.class);
+                Intent i = new Intent(CreateActivity2.this,MainActivity.class);
                 startActivity(i);
                 finish();
             }

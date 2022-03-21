@@ -13,15 +13,15 @@
         android:orientation="vertical"
         android:layout_marginBottom="20dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/my_toolbarcreate1"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@null"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/my_toolbarcreate1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="@null"-->
+<!--            android:elevation="4dp"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+<!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+<include layout="@layout/toolbar"/>
 
 
     </LinearLayout>
@@ -29,6 +29,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -45,6 +46,7 @@
             android:id="@+id/textView_alreadyaccount_CreateActivity2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:freezesText="true"
             android:paddingTop="20dp"
             android:text="Already have an account? Sign in"
@@ -60,7 +62,7 @@
             android:layout_height="29dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
-
+            android:fontFamily="@font/poppins"
             android:text="Email address"
             android:textColor="#0C0640"
             android:textSize="20dp"
@@ -79,8 +81,10 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:textColor="#ffff"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,6 +94,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
             android:text="Password"
             android:textColor="#0C0640"
             android:textSize="20dp"
@@ -108,7 +113,8 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
 
@@ -117,9 +123,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView_alreadyaccount_CreateActivity2"
-
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
             android:text="Confirm Password"
             android:textColor="#0C0640"
             android:textSize="20dp"
@@ -137,11 +143,11 @@
             android:layout_marginEnd="22dp"
             android:background="@drawable/rounded_border"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <CheckBox
-            android:textColor="#0C0640"
             android:id="@+id/checkman"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,11 +156,12 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="29dp"
             android:layout_marginTop="25dp"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:text="Remember me Next time"
             android:button="@drawable/custom_checkbox"
-             />
+            android:fontFamily="@font/poppins"
+            android:text="Remember me next time"
+            android:textColor="#0C0640"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -162,7 +169,8 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="45dp"
             android:layout_marginRight="20dp"
-            android:text="By creating your account you accept the CGU and the conditions of use."
+            android:fontFamily="@font/poppins"
+            android:text="By creating your account you accept the CGU and the conditions of use"
             android:textColor="#0C0640"
             android:textSize="19dp" />
 
@@ -183,7 +191,7 @@
             android:id="@+id/button_Letsgo_CreateActivity"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-android:textSize="18sp"
+            android:textSize="18sp"
             android:background="@drawable/blue_button"
             android:text="Next" />
 

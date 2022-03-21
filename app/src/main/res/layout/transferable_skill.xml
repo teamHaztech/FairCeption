@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,28 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".TransferableSkillActivity"
     android:background="#D1D5E4">
-    <LinearLayout
+
+
+    <LinearLayout android:id="@+id/llTS"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="20dp">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/my_toolbarTransfer"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@null"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
+        android:orientation="vertical">
+        <include
+           layout="@layout/toolbar" />
 
 
     </LinearLayout>
 
+
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llTS">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,11 +39,19 @@
                 android:orientation="vertical">
 
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
                     android:text="Select your Transferable Skills"
                     android:textAlignment="center"
                     android:textColor="#0C0640"
@@ -88,6 +90,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="0dp"
+                            android:fontFamily="@font/poppins"
                             android:text="Communication / Collaboration"
                             android:textColor="#00003A"
                             android:textSize="20dp"
@@ -99,202 +102,84 @@
 
                 <HorizontalScrollView
                     android:id="@+id/hsvr"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
                     android:fillViewport="true"
                     android:measureAllChildren="false"
-                    android:scrollbars="none" >
+                    android:scrollbars="none">
 
-                <GridLayout android:columnCount="3"
-                    android:rowCount="5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ToggleButton
-                            android:id="@+id/togglreaBdrfuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Coordinate Teams &amp; Activities"
-                            android:textOn="Coordinate Teams &amp; Activities" />
-                        <ToggleButton
-                            android:id="@+id/togglesadBdruttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Manage Projects"
-                            android:textOn="Manage Projects" />
-                        <ToggleButton
-                        android:id="@+id/toggleaBsddrsuttson1"
-                        android:layout_width="125dp"
+                    <GridLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/roundselector"
-                        android:text=""
-                        android:textColor="@drawable/textcolortoggle"
-                        android:textOff="Develop integrated strategies"
-                        android:textOn="Develop integrated strategies" />
-
-
-
-                        <ToggleButton
-                            android:id="@+id/toggssleaBdruttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Develop integrated strategies"
-                            android:textOn="Develop integrated strategies" />
-
-
-
-
-                    </LinearLayout>
-
-
-                </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Designing  operating"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hsdv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="5">
 
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="10dp"
                             app:alignContent="stretch"
                             app:alignItems="stretch"
                             app:flexWrap="wrap">
 
                             <ToggleButton
-                                android:id="@+id/tosggleaBdrfuttson1"
-                                android:layout_width="125dp"
+                                android:id="@+id/togglreaBdrfuttson1"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/roundselector"
+                                android:fontFamily="@font/poppins"
+                                android:padding="5dp"
                                 android:text=""
                                 android:textColor="@drawable/textcolortoggle"
                                 android:textOff="Coordinate Teams &amp; Activities"
                                 android:textOn="Coordinate Teams &amp; Activities" />
+
                             <ToggleButton
-                                android:id="@+id/togglessadcBdruttson1"
-                                android:layout_width="125dp"
+                                android:id="@+id/togglesadBdruttson1"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/roundselector"
+
+                                android:fontFamily="@font/poppins"
+                                android:padding="5dp"
                                 android:text=""
                                 android:textColor="@drawable/textcolortoggle"
                                 android:textOff="Manage Projects"
                                 android:textOn="Manage Projects" />
-                            <ToggleButton
-                            android:id="@+id/toggleaBdrcfdsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Create new concepts"
-                            android:textOn="Create new concepts" />
-
-
 
                             <ToggleButton
-                                android:id="@+id/toggleddaBdruttson1"
-                                android:layout_width="125dp"
+                                android:id="@+id/toggleaBsddrsuttson1"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/roundselector"
+                                android:fontFamily="@font/poppins"
+                                android:padding="5dp"
                                 android:text=""
                                 android:textColor="@drawable/textcolortoggle"
                                 android:textOff="Develop integrated strategies"
                                 android:textOn="Develop integrated strategies" />
 
 
+                            <ToggleButton
+                                android:id="@+id/toggssleaBdruttson1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/roundselector"
+                                android:fontFamily="@font/poppins"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="@drawable/textcolortoggle"
+                                android:textOff="Develop integrated strategies"
+                                android:textOn="Develop integrated strategies" />
 
 
                         </LinearLayout>
@@ -304,909 +189,27 @@
 
                 </HorizontalScrollView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
 
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    <Button
+                        android:id="@+id/btnNextHardskill2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Artistic creativity"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
+                        android:layout_height="72dp"
+                        android:background="@drawable/blue_button"
+                        android:fontFamily="@font/poppins"
+                        android:text="Confirm"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
 
-                <HorizontalScrollView
-                    android:id="@+id/hsvds"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/togglsseaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Coordinate Teams &amp; Activities"
-                                android:textOn="Coordinate Teams &amp; Activities" />
-                            <ToggleButton
-                                android:id="@+id/toggleaddsdBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Manage Projects"
-                                android:textOn="Manage Projects" />
-                            <ToggleButton
-                            android:id="@+id/tocdggleaBdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Develop integrated strategies"
-                            android:textOn="Develop integrated strategies" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/toggleaBdrsssuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Create new concepts"
-                                android:textOn="Create new concepts" />
-
-
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
 
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Commercial skills"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hsfv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/toggffleaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Maintenance"
-                                android:textOn="Site/Facility Maintenance" />
-                            <ToggleButton
-                                android:id="@+id/toggleassdBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Operations"
-                                android:textOn="Site/Facility Operations" /> <ToggleButton
-                            android:id="@+id/tossggleaBdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Site/Facility Management"
-                            android:textOn="Site/Facility Management" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/togsgleaBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Ensure Quality Delivery"
-                                android:textOn="Ensure Quality Delivery" />
-
-                            <ToggleButton
-                                android:id="@+id/togglesBvssutton2"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Inspect &amp; Test"
-                                android:textOn="Inspect &amp; Test" />
-
-                            <ToggleButton
-                                android:id="@+id/togglesszBdssutton3"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="15dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="SAME SCREEN AS DASHBOARD"
-                                android:textOn="SAME SCREEN AS DASHBOARD" />
-
-                            <ToggleButton
-                                android:id="@+id/toggledBsuttddon4"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="20dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Ensure Safety Procedures/Processes"
-                                android:textOn="Ensure Safety Procedures/Processes" />
-
-
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Information skills"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hssv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/tsoggleaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Coordinate Teams &amp; Activities"
-                                android:textOn="Coordinate Teams &amp; Activities" />
-                            <ToggleButton
-                                android:id="@+id/toggdleadBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Manage Projects"
-                                android:textOn="Manage Projects" /> <ToggleButton
-                            android:id="@+id/toggleaBszdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Develop integrated strategies"
-                            android:textOn="Develop integrated strategies" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/togssgleaBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Create new concepts"
-                                android:textOn="Create new concepts" />
-
-
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Assisting &amp; caring"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hsxzv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/toggZSleaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Maintenance"
-                                android:textOn="Site/Facility Maintenance" />
-                            <ToggleButton
-                                android:id="@+id/togsagleadBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Operations"
-                                android:textOn="Site/Facility Operations" /> <ToggleButton
-                            android:id="@+id/togsaagleaBdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Site/Facility Management"
-                            android:textOn="Site/Facility Management" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/tosssggleaBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Ensure Quality Delivery"
-                                android:textOn="Ensure Quality Delivery" />
-
-                            <ToggleButton
-                                android:id="@+id/togglessacsBsutton2"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Inspect &amp; Test"
-                                android:textOn="Inspect &amp; Test" />
-
-                            <ToggleButton
-                                android:id="@+id/toggleBdssssssutton3"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="15dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Protect the Environment"
-                                android:textOn="Protect the Environment" />
-
-                            <ToggleButton
-                                android:id="@+id/toggsssledBsutton4"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="20dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Ensure Safety Procedures/Processes"
-                                android:textOn="Ensure Safety Procedures/Processes" />
-
-
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Management skills"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hsddv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/todzggleaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Coordinate Teams &amp; Activities"
-                                android:textOn="Coordinate Teams &amp; Activities" />
-                            <ToggleButton
-                                android:id="@+id/toggleaadBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Manage Projects"
-                                android:textOn="Manage Projects" /> <ToggleButton
-                            android:id="@+id/tssogglseaBdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Develop integrated strategies"
-                            android:textOn="Develop integrated strategies" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/togsaasgleaBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Create new concepts"
-                                android:textOn="Create new concepts" />
-
-
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:alignContent="stretch"
-                        app:alignItems="stretch"
-                        app:flexWrap="wrap">
-
-                        <ImageView
-                            android:layout_width="49dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_qustionmark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="0dp"
-                            android:text="Digital Skills"
-                            android:textColor="#00003A"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-                    </com.google.android.flexbox.FlexboxLayout>
-
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:id="@+id/hsv"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fillViewport="true"
-                    android:measureAllChildren="false"
-                    android:scrollbars="none" >
-
-                    <GridLayout android:columnCount="3"
-                        android:rowCount="5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:alignContent="stretch"
-                            app:alignItems="stretch"
-                            app:flexWrap="wrap">
-
-                            <ToggleButton
-                                android:id="@+id/toggleaBdrfuttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Maintenance"
-                                android:textOn="Site/Facility Maintenance" />
-                            <ToggleButton
-                                android:id="@+id/toggleadBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Site/Facility Operations"
-                                android:textOn="Site/Facility Operations" /> <ToggleButton
-                            android:id="@+id/toggleaBdrsuttson1"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/roundselector"
-                            android:text=""
-                            android:textColor="@drawable/textcolortoggle"
-                            android:textOff="Site/Facility Management"
-                            android:textOn="Site/Facility Management" />
-
-
-
-                            <ToggleButton
-                                android:id="@+id/toggleaBdruttson1"
-                                android:layout_width="125dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text=""
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Just curious"
-                                android:textOn="Just curious" />
-
-                            <ToggleButton
-                                android:id="@+id/togglesBsutton2"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Get trusted"
-                                android:textOn="Get trusted" />
-
-                            <ToggleButton
-                                android:id="@+id/toggleBdssutton3"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="15dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Know myself"
-                                android:textOn="Know myself" />
-
-                            <ToggleButton
-                                android:id="@+id/toggledBsutton4"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="20dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Change Job"
-                                android:textOn="Change Job" />
-
-                            <ToggleButton
-                                android:id="@+id/togglsesBsutton5"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/roundselector"
-                                android:text="sdsd"
-                                android:textColor="@drawable/textcolortoggle"
-                                android:textOff="Change Career"
-                                android:textOn="Change Career" />
-
-
-                        </LinearLayout>
-
-
-                    </GridLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-
-
-                <Button
-                    android:id="@+id/btnNextHardskill2"
-                    android:layout_width="match_parent"
-                    android:layout_height="72dp"
-
-                    android:background="@drawable/blue_button"
-                    android:text="Confirm" />
-
-
-            </LinearLayout>
-
-
-
-
-
 
 
         </LinearLayout>
